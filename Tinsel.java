@@ -1,19 +1,21 @@
 package Assn3;//lukacs ablonczy
 
-public class Tinsel  extends TreeDecorator{
+public class Tinsel extends TreeDecorator {
 
 	private ChristmasTree tree;
 
-	public Tinsel(ChristmasTree tree){
+	public Tinsel(ChristmasTree tree) {
 		this.tree = tree;
+		this.description = tree.description;
 	}
 
-	public String toString(){
-		return tree.description + " + tinsel all around";
+	public String toString() {
+		tree.description += " + tinsel all around";
+		return tree.description;
 	}
 
-	public double getCost(){
-		return this.tree.getCost() + 2;
+	public double getCost() {
+		return tree.getCost() + 2;
 	}
 
 }

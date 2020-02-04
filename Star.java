@@ -1,19 +1,21 @@
 package Assn3;//lukacs ablonczy
 
-public class Star extends TreeDecorator{
+public class Star extends TreeDecorator {
 
 	private ChristmasTree tree;
 
-	public Star(ChristmasTree tree){
+	public Star(ChristmasTree tree) {
 		this.tree = tree;
+		this.description = tree.description;
 	}
 
-	public String toString(){
-		return tree.description + " + a star on top";
+	public String toString() {
+		tree.description += " + a star on top";
+		return tree.description;
 	}
 
-	public double getCost(){
-		return this.tree.getCost() + 6;
+	public double getCost() {
+		return tree.getCost() + 6;
 	}
 
 }

@@ -1,12 +1,12 @@
 package Assn3;//lukacs ablonczy
 
-public class CharlieBrownTree extends ChristmasTree{
+public class CharlieBrownTree extends ChristmasTree {
 
-	public CharlieBrownTree(){
+	public CharlieBrownTree() {
 		this.description = "Charlie Brown's Christmas Tree";
 	}
 
-	public double getCost(){
+	public double getCost() {
 		return 5;
 	}
 
